@@ -66,19 +66,3 @@ my_truck = Truck()
 
 # TODO: Print something to show the truck is ready
 print(f"{my_truck.year} {my_truck.make} {my_truck.model} initialized.")
-
-# TODO: Try accelerating the truck and see how fast it goes
-my_truck.accelerate()
-
-# TODO: Try braking the truck to slow it down
-my_truck.brake()
-
-# TODO: Turn the headlights on and off
-my_truck.turn_on_lights()
-my_truck.turn_off_lights()
-
-# TODO: Honk the horn for fun
-my_truck.honk()
-
-# TODO: Show the current truck status
-my_truck.status()
