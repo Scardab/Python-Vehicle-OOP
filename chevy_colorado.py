@@ -20,7 +20,6 @@ class Truck:
         # TODO: Start the speed at 0 because the truck isn't moving yet
         self.speed = 0  # in miles per hour
 
-        # TODO: Change of plans, I am adding lights and a horn
         # TODO: Keep track of whether the headlights are on or off
         self.lights_on = False
 
@@ -48,6 +47,10 @@ class Truck:
     def turn_off_lights(self):
         self.lights_on = False
         print("Headlights are now OFF.")
+    
+    # TODO: Make the truck honk its horn
+    def honk(self):
+        print("Honk! Honk!")
 
 # TODO: Make an actual truck from the Truck class
 my_truck = Truck()
@@ -64,3 +67,6 @@ my_truck.brake()
 # TODO: Turn the headlights on and off
 my_truck.turn_on_lights()
 my_truck.turn_off_lights()
+
+# TODO: Honk the horn for fun
+my_truck.honk()
