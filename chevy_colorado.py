@@ -20,7 +20,9 @@ class Truck:
         # TODO: Start the speed at 0 because the truck isn't moving yet
         self.speed = 0  # in miles per hour
 
-        # TODO: Later on we might want to add gas level, color, or mileage
+        # TODO: Change of plans, I am adding lights and a horn
+        # TODO: Keep track of whether the headlights are on or off
+        self.lights_on = False
 
     # TODO: Let the truck start moving by accelerating
     def accelerate(self):
@@ -28,7 +30,7 @@ class Truck:
         self.speed += 10
         print(f"Accelerating... Current speed: {self.speed} mph")
 
-        # TODO: Add a way to slow the truck down
+    # TODO: Add a way to slow the truck down
     def brake(self):
         # Decrease speed by 10, but not below 0
         if self.speed >= 10:
@@ -36,6 +38,16 @@ class Truck:
         else:
             self.speed = 0
         print(f"Braking... Current speed: {self.speed} mph")
+
+    # TODO: Turn the headlights on
+    def turn_on_lights(self):
+        self.lights_on = True
+        print("Headlights are now ON.")
+
+    # TODO: Turn the headlights off
+    def turn_off_lights(self):
+        self.lights_on = False
+        print("Headlights are now OFF.")
 
 # TODO: Make an actual truck from the Truck class
 my_truck = Truck()
@@ -48,3 +60,7 @@ my_truck.accelerate()
 
 # TODO: Try braking the truck to slow it down
 my_truck.brake()
+
+# TODO: Turn the headlights on and off
+my_truck.turn_on_lights()
+my_truck.turn_off_lights()
