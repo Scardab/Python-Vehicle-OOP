@@ -52,6 +52,15 @@ class Truck:
     def honk(self):
         print("Honk! Honk!")
 
+    # TODO: Show the current status of the truck
+    def status(self):
+        print("----- Truck Status -----")
+        print(f"Make: {self.make}")
+        print(f"Model: {self.model}")
+        print(f"Year: {self.year}")
+        print(f"Speed: {self.speed} mph")
+        print(f"Headlights On: {'Yes' if self.lights_on else 'No'}")
+
 # TODO: Make an actual truck from the Truck class
 my_truck = Truck()
 
@@ -70,3 +79,6 @@ my_truck.turn_off_lights()
 
 # TODO: Honk the horn for fun
 my_truck.honk()
+
+# TODO: Show the current truck status
+my_truck.status()
