@@ -28,6 +28,15 @@ class Truck:
         self.speed += 10
         print(f"Accelerating... Current speed: {self.speed} mph")
 
+        # TODO: Add a way to slow the truck down
+    def brake(self):
+        # Decrease speed by 10, but not below 0
+        if self.speed >= 10:
+            self.speed -= 10
+        else:
+            self.speed = 0
+        print(f"Braking... Current speed: {self.speed} mph")
+
 # TODO: Make an actual truck from the Truck class
 my_truck = Truck()
 
@@ -36,3 +45,6 @@ print(f"{my_truck.year} {my_truck.make} {my_truck.model} initialized.")
 
 # TODO: Try accelerating the truck and see how fast it goes
 my_truck.accelerate()
+
+# TODO: Try braking the truck to slow it down
+my_truck.brake()
