@@ -22,9 +22,17 @@ class Truck:
 
         # TODO: Later on we might want to add gas level, color, or mileage
 
+    # TODO: Let the truck start moving by accelerating
+    def accelerate(self):
+        # Increase the speed by 10 each time this method is called
+        self.speed += 10
+        print(f"Accelerating... Current speed: {self.speed} mph")
 
 # TODO: Make an actual truck from the Truck class
 my_truck = Truck()
 
 # TODO: Print something to show the truck is ready
 print(f"{my_truck.year} {my_truck.make} {my_truck.model} initialized.")
+
+# TODO: Try accelerating the truck and see how fast it goes
+my_truck.accelerate()
